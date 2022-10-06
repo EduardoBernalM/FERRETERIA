@@ -21,8 +21,6 @@ USE ferreteria;
         parentesco CHAR(1) NOT NULL,
       nombre VARCHAR (10) NOT NULL
       );
-
-        
       CREATE TABLE factura(
        idfactura INT AUTO_INCREMENT PRIMARY KEY,
         pago DECIMAL(2,2),
@@ -33,7 +31,7 @@ USE ferreteria;
           codigo VARCHAR(10),
           fabricante VARCHAR(5),
           descripcion VARCHAR(5),
-          precio DECIMAL(2,2),
+          precio DECIMAL(1,2),
           existencia VARCHAR(3)
           );
                 CREATE TABLE registro(
@@ -44,7 +42,33 @@ USE ferreteria;
           );
            
           INSERT INTO vendedor (idvendedor,nombre,ventas,telefono,objeventa,fecha_ingreso)
-          VALUES (1,"claudia",5,5566774845,2,"2022-05-06"),(2,"luis",5,5556887711,3,"2022-05-14")
+          VALUES (1,"claudia",5,5566774845,2,"2022-05-06"),(2,"luis",5,5556887711,3,"2022-05-14"),(3,"eduardo",5,5688771144,3,"2022-05-15"),(4,"ingrid",5,5677884411,3,"2022-05-16"),
+          (5,"karim",4,5699332225,6,"2022-05-17"),(6,"joshua",4,5699857589,6,"2022-05-18"),(7,"rosalba",5,5624111544,6,"2022-05-18"),(8,"michelle",9,5689876564,10,"2022-05-18"),(9,"michelle",9,5689876564,10,"2022-05-19");
+
+
+          INSERT INTO cliente (idcliente,nombre,apellido,cedula,limcredito) VALUES
+          (011,"luis","sanches",044,),(022,"ana","sanchez",044),(033,"luisa","ferdandes",044),(044,"alejandro","martinez",055),(055,"alejandra","gonzales",055),
+          (066,"dulce","cuapio",055),(077,"abigail","cuapio",044),(088,"gaby","fernandes",044),(099,"karen","perez",055),(100,"daniela","sanchez",044);
+
+
+          INSERT INTO familiar(idfamiliar,parentesco,nombe) VALUES
+          (012,088,"zara"),(013,077,"luisa"),(014,066,"fernanda"),(015,011,"eduardo"),(016,022,"luis"),(017,033,"daniel"),(018,044,"ricardo");
+
+
+          INSERT INTO factura(idfactura,pago,fecha_ingreso) VALUES
+          (1,)
+
+
+          INSERT INTO articulo(idarticulo,codigo,fabricante,descripcion,precio,existencia) VALUES
+          ()
+
+
+
+
+          INSERT INTO  factura_registro_articulio(idfactura,idarticulo) VALUES
+
+
+
 
 
           
