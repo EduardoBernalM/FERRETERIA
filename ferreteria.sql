@@ -31,8 +31,8 @@ USE ferreteria;
           codigo VARCHAR(10),
           fabricante VARCHAR(5),
           descripcion VARCHAR(5),
-          precio DECIMAL(1,2),
-          existencia VARCHAR(3)
+          precio DECIMAL(2,2),
+          existencia VARCHAR(10)
           );
                 CREATE TABLE registro(
                   idfactura INT,
@@ -60,10 +60,8 @@ USE ferreteria;
 
 
           INSERT INTO articulo(idarticulo,codigo,fabricante,descripcion,precio,existencia) VALUES
-          ()
-
-
-
+          ("1A",11,3,"cortadora",500,2),("2B",22,3,"serrucho",400,1),("3C",33,4,"cincel",200,3),("4D",44,3,"cuadrado y azul",100,3),
+          ("5E",55,3,"escalera",700,3),("6F",66,3,"martillo",54.99,3),("7G",77,3,"clavo",2,10);
 
           INSERT INTO  factura_registro_articulio(idfactura,idarticulo) VALUES
 
